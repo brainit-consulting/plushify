@@ -84,37 +84,34 @@ Build the main application pages: Generate, Gallery, and enhance landing page.
 
 ### Tasks
 
-- [ ] Update site header with public navigation (How It Works, FAQ, Pricing)
-- [ ] Update site header with authenticated navigation (Dashboard, Generate, Gallery)
-- [ ] Add user dropdown menu to site header
-- [ ] Ensure theme toggle works in header
-- [ ] Add mobile responsive menu to site header
-- [ ] Add before/after image showcase component to landing page
-- [ ] Add testimonials section to landing page
-- [ ] Add pricing preview section to landing page
-- [ ] Create `/generate` page with step-based flow [complex]
-  - [ ] Create UploadZone component with drag-and-drop
-  - [ ] Create ImagePreviewCard component
-  - [ ] Create SubjectTypeSelector component
-  - [ ] Create CreditCostIndicator component
-  - [ ] Create ProcessingOverlay component with animation
-  - [ ] Create ResultDisplay component
-  - [ ] Create ComparisonSlider component (before/after)
-  - [ ] Wire up step navigation flow
-- [ ] Create `/gallery` page with responsive grid [complex]
-  - [ ] Create GalleryHeader component (title, filters, sort)
-  - [ ] Create GalleryGrid component (responsive)
-  - [ ] Create GalleryCard component with hover actions
-  - [ ] Create GalleryEmptyState component
-  - [ ] Add filter by subject type
-  - [ ] Add sort by date (newest/oldest)
-- [ ] Create `/gallery/[id]` detail page
-  - [ ] Create ImageViewer component (full-size with zoom)
-  - [ ] Create ImageDetails component (metadata)
-  - [ ] Create DownloadMenu component (size options)
-  - [ ] Create SharePanel component
-  - [ ] Create DeleteConfirmDialog component
-  - [ ] Add previous/next navigation
+- [x] Update site header with public navigation (How It Works, FAQ, Pricing)
+- [x] Update site header with authenticated navigation (Dashboard, Generate, Gallery)
+- [x] Add user dropdown menu to site header
+- [x] Ensure theme toggle works in header
+- [x] Add mobile responsive menu to site header (Sheet component)
+- [x] Add before/after image showcase component to landing page
+- [x] Add testimonials section to landing page
+- [x] Add pricing preview section to landing page
+- [x] Create `/generate` page with step-based flow [complex]
+  - [x] Create UploadZone component with drag-and-drop
+  - [x] Create ImagePreviewCard component
+  - [x] Create SubjectTypeSelector component
+  - [x] Create CreditIndicator component
+  - [x] Create ProcessingOverlay component with animation
+  - [x] Create ResultDisplay component
+  - [x] Create ComparisonSlider component (before/after)
+  - [x] Wire up step navigation flow
+- [x] Create `/gallery` page with responsive grid [complex]
+  - [x] Create GalleryCard component with hover actions
+  - [x] Create GalleryEmptyState component
+  - [x] Create GalleryGrid with filters and sort
+  - [x] Add filter by subject type
+  - [x] Add sort by date (newest/oldest)
+- [x] Create `/gallery/[id]` detail page
+  - [x] Create ImageViewer component (full-size with zoom)
+  - [x] Create ImageDetails component (metadata)
+  - [x] Add download/share/delete actions
+  - [x] Add previous/next navigation (with keyboard support)
 
 ### Technical Details
 

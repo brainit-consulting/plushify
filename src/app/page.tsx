@@ -1,5 +1,15 @@
 import Link from "next/link";
-import { Sparkles, Upload, Download, ImageIcon, Star, ArrowRight } from "lucide-react";
+import {
+  Sparkles,
+  Upload,
+  Download,
+  ImageIcon,
+  Star,
+  ArrowRight,
+} from "lucide-react";
+import { BeforeAfterShowcase } from "@/components/landing/before-after-showcase";
+import { PricingPreview } from "@/components/landing/pricing-preview";
+import { TestimonialsSection } from "@/components/landing/testimonials-section";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -16,8 +26,8 @@ export default function LandingPage() {
               <span className="text-primary">Adorable Plushie</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Upload photos of yourself, friends, family, or pets and watch our AI
-              transform them into cute, huggable plushie-style images.
+              Upload photos of yourself, friends, family, or pets and watch our
+              AI transform them into cute, huggable plushie-style images.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
@@ -26,7 +36,12 @@ export default function LandingPage() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="text-lg px-8"
+              >
                 <Link href="/how-it-works">See How It Works</Link>
               </Button>
             </div>
@@ -50,19 +65,26 @@ export default function LandingPage() {
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-5 h-5 fill-primary text-primary" />
               ))}
-              <span className="ml-2 text-sm text-muted-foreground">4.9/5 rating</span>
+              <span className="ml-2 text-sm text-muted-foreground">
+                4.9/5 rating
+              </span>
             </div>
             <div className="h-8 w-px bg-border hidden sm:block" />
             <div>
               <p className="text-2xl font-bold text-primary">30 sec</p>
-              <p className="text-sm text-muted-foreground">Average Generation</p>
+              <p className="text-sm text-muted-foreground">
+                Average Generation
+              </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Before/After Showcase */}
+      <BeforeAfterShowcase />
+
       {/* How It Works */}
-      <section className="py-20">
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">How It Works</h2>
@@ -109,17 +131,33 @@ export default function LandingPage() {
       </section>
 
       {/* Features */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Why Choose Plushify?</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
-              { icon: Sparkles, title: "AI-Powered", desc: "State-of-the-art AI for stunning results" },
-              { icon: ImageIcon, title: "High Quality", desc: "Crystal clear, high-resolution images" },
-              { icon: Upload, title: "Easy to Use", desc: "Simple drag-and-drop interface" },
-              { icon: Download, title: "Instant Download", desc: "Get your plushie in seconds" },
+              {
+                icon: Sparkles,
+                title: "AI-Powered",
+                desc: "State-of-the-art AI for stunning results",
+              },
+              {
+                icon: ImageIcon,
+                title: "High Quality",
+                desc: "Crystal clear, high-resolution images",
+              },
+              {
+                icon: Upload,
+                title: "Easy to Use",
+                desc: "Simple drag-and-drop interface",
+              },
+              {
+                icon: Download,
+                title: "Instant Download",
+                desc: "Get your plushie in seconds",
+              },
             ].map((feature, i) => (
               <div key={i} className="text-center p-6">
                 <feature.icon className="w-10 h-10 mx-auto mb-3 text-primary" />
@@ -131,6 +169,12 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <TestimonialsSection />
+
+      {/* Pricing Preview */}
+      <PricingPreview />
+
       {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -139,8 +183,8 @@ export default function LandingPage() {
               Ready to Create Your First Plushie?
             </h2>
             <p className="text-muted-foreground mb-8">
-              Join thousands of happy users who have transformed their photos into
-              adorable plushies.
+              Join thousands of happy users who have transformed their photos
+              into adorable plushies.
             </p>
             <Button asChild size="lg" className="text-lg px-8">
               <Link href="/register">
