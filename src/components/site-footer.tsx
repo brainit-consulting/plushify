@@ -16,6 +16,15 @@ export function SiteFooter() {
             >
               Leon van Zyl
             </a>
+            {" "}with Customization by{" "}
+            <a
+              href="https://brainitconsulting.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              Emile du Toit
+            </a>
           </p>
         </div>
       </div>
