@@ -216,35 +216,36 @@ pnpm dlx shadcn@latest add tooltip
 
 ---
 
-## Phase 3: Supporting Pages
+## Phase 3: Supporting Pages (COMPLETED)
 
 Build pricing, documentation, and legal pages.
 
 ### Tasks
 
-- [ ] Create `/pricing` page [complex]
-  - [ ] Create PricingCard component
-  - [ ] Create pricing tier comparison (Basic $9, Pro $19, Elite $29)
-  - [ ] Add "Most Popular" badge to Pro tier
-  - [ ] Add feature checklist per tier
-  - [ ] Add pricing FAQ section
-- [ ] Create `/how-it-works` page
-  - [ ] Hero section with headline
-  - [ ] Step-by-step guide with illustrations
-  - [ ] Tips for best results section
-  - [ ] Example gallery section
-  - [ ] CTA to get started
-- [ ] Create `/faq` page
-  - [ ] Add Accordion component from shadcn/ui
-  - [ ] Create FAQ categories (Getting Started, Image Generation, Account & Billing, Privacy & Security)
-  - [ ] Populate with FAQ content
-- [ ] Create `/help` page
-  - [ ] Quick links to FAQ, How It Works
-  - [ ] Contact information/email link
-  - [ ] Response time expectation
-- [ ] Create `/privacy` page with privacy policy content
-- [ ] Create `/terms` page with terms of service content
-- [ ] Create `/cookies` page with cookie policy content
+- [x] Create `/pricing` page [complex]
+  - [x] Create PricingCard component
+  - [x] Create pricing tier comparison (Basic $9, Pro $19, Elite $29)
+  - [x] Add "Most Popular" badge to Pro tier
+  - [x] Add feature checklist per tier
+  - [x] Add pricing FAQ section
+- [x] Create `/how-it-works` page
+  - [x] Hero section with headline
+  - [x] Step-by-step guide with illustrations
+  - [x] Tips for best results section
+  - [x] Example gallery section
+  - [x] CTA to get started
+- [x] Create `/faq` page
+  - [x] Add Accordion component from shadcn/ui
+  - [x] Create FAQ categories (Getting Started, Image Generation, Account & Billing, Privacy & Security)
+  - [x] Populate with FAQ content
+- [x] Create `/help` page
+  - [x] Quick links to FAQ, How It Works
+  - [x] Contact information/email link
+  - [x] Response time expectation
+- [x] Create `/privacy` page with privacy policy content
+- [x] Create `/terms` page with terms of service content
+- [x] Create `/cookies` page with cookie policy content
+- [x] Update site footer with Plushify branding and legal links
 
 ### Technical Details
 
