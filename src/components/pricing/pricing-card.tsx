@@ -67,10 +67,7 @@ export function PricingCard({ tier }: PricingCardProps) {
       <CardFooter className="pt-4">
         <Button
           asChild
-          className={cn(
-            "w-full",
-            tier.popular ? "" : "variant-outline"
-          )}
+          className="w-full"
           variant={tier.popular ? "default" : "outline"}
           size="lg"
         >
