@@ -438,3 +438,7 @@ If you encounter any issues:
 ---
 
 **Happy coding! 🚀**
+
+## Support
+
+If this project helps you, you can support DreamForge Academy here: [Buy Me a Coffee](https://buymeacoffee.com/dreamforgeacademy).
